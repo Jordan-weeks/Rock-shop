@@ -1,11 +1,11 @@
 nav{
     display: flex;
     flex-direction: column;
+    gap: .5em;
     position: absolute;
     background-color: forestgreen;
     width: 10%;
-    height: 100%;
-    transform: translateX(20%);
+    padding: 1em;
 }
 
 nav>a{

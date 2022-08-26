@@ -7,7 +7,7 @@ const Shop =({storeItems}) => {
     return(  
   <main>
     {storeItems.map((item) =>(
-        <Link key={item.id}to={`/shop/${item.name}`}>
+        <Link key={item.id}to={`/shop/${item.id}`}>
           <Item key={item.id} item={item}/>
         </Link>
         
