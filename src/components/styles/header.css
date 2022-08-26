@@ -1,0 +1,25 @@
+* , *:before, *:after{ 
+    box-sizing:border-box;  
+}
+
+.header{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    background-image: url(../../assets/dirt.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.325);   
+}
+.icon{
+    color: rgb(201, 201, 201);
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.325);   
+
+}
+/* .store-card{
+    color: chartreuse;
+} */

@@ -1,0 +1,14 @@
+nav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: forestgreen;
+    width: 10%;
+    height: 100%;
+    transform: translateX(20%);
+}
+
+nav>a{
+    text-decoration: none;
+    color: brown;
+}

@@ -1,0 +1,33 @@
+{
+    "items":[
+        {
+        "name": "Obsidian",
+        "description": "A piece of black Obsidian. Weights range from 4oz to 16oz",
+        "price": 1099,
+        "id": 1,
+        "image": "/assets/obsidian.jpg" 
+        },
+        {
+        "name": "Moss Agate",
+        "description": "A piece of Moss Agate. Weights range from 4oz to 16oz",
+        "price": 1599,
+        "id": 2,
+        "image": "/assets/moss-agate.jpg" 
+        },
+        {
+        "name": "Thunderegg",
+        "description": "A solid Thunderegg. Weights range from 4oz to 10oz",
+        "price": 1899,
+        "id": 3,
+        "image": "/assets/thunderegg.jpg"
+        },
+        {
+        "name": "Sunstone",
+        "description": "Oregon Sunstone. Weights range from 1oz to 2oz",
+        "price": 2599,
+        "id": 4,
+        "image": "/assets/sunstone.jpg"
+        }
+
+    ]
+}
