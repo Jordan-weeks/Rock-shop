@@ -22,6 +22,18 @@ const ItemDetail = ({storeItems, cart, setCart, setItemsInCart}) => {
   }
 
   const addToCart = () =>{
+    if (cart.some(item => item.id === foundItem.id)){
+
+      const newCart =cart.map(cartItem =>{
+        if(cartItem.id === foundItem.id){
+          return {...cartItem, quantity: cartItem.quantity += quantity}
+        }
+      return cartItem
+      })
+      setCart(newCart)
+        setQuantity(1)
+        return
+    }    
     setCart([...cart, {id:foundItem.id, quantity: quantity}])
     setQuantity(1)
     } 
@@ -34,9 +46,10 @@ const ItemDetail = ({storeItems, cart, setCart, setItemsInCart}) => {
     }, [cart])
 
   return (
+    
     <>
-    <button onClick={()=>console.log(params)}>log</button>
-    <button onClick={()=>console.log(foundItem)}>foundItem</button>
+    <button onClick={()=>console.log(cart)}>log</button>
+    <button onClick={()=>console.log(quantity)}>quantity</button>
     <button onClick={()=>navigate('/shop')}>Back to shop</button>
 
     <div>ItemDetail for {foundItem.name}</div>
