@@ -1,7 +1,19 @@
-main{
-    background-color: darkslategray;
+.shop{
+    background-color: #E5E5E5;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-inline: auto;
+    
     gap: 2rem;
-    padding-inline: 4rem;
+    padding-inline: 1em;
+}
+main>a{
+    text-decoration: none;
+}
+@media only screen and (min-width: 768px){
+    .shop{
+        grid-template-columns: repeat(2, 1fr);  
+    }
 }

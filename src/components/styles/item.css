@@ -1,19 +1,24 @@
 .store-card{
     width: 100%;
-    border: 3px solid chartreuse;
-    color: chartreuse;
+    background-color: white;
+    padding: 1em;
+    border-radius: 10px;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    gap: .5em;
+    /* padding: 1rem; */
     text-decoration: none;
+    box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.63);
 }
 .store-card>img{
     object-fit: cover;
-    width: 80%;
+    width: 70%;
     aspect-ratio: 1/1;
-    border-radius: 5px;
+    border-radius: 50%;
 }
-.store-card>h2{
-    /* text-decoration: none; */
+.store-card>a{
+    text-decoration: none;
+    color: inherit;
 }

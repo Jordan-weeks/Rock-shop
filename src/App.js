@@ -5,9 +5,10 @@ import Shop from "./components/Shop"
 import Nav from "./components/Nav";
 import ItemDetail from "./components/ItemDetail"
 import {useState, useEffect} from 'react'
-import { BrowserRouter, Outlet, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter,Route, Routes } from "react-router-dom";
 import Home from "./components/Home.js";
 import Cart from "./components/Cart.jsx";
+import './app.css'
 
 function App() {
   const [navOpen, setNavOpen] = useState(false)
@@ -26,10 +27,10 @@ function App() {
   return (
     <div className="app">
     <BrowserRouter>
-    <Header setNavOpen={setNavOpen} navOpen={navOpen} cart ={cart} setCart={setCart} itemsInCart={itemsInCart} >
+    <Header setNavOpen={setNavOpen} navOpen={navOpen} cart ={cart} setCart={setCart} itemsInCart={itemsInCart} setItemsInCart={setItemsInCart} >
     
     </Header>
-    {navOpen?<Nav navOpen={navOpen} setNavOpen={setNavOpen}/> : null }
+    <Nav navOpen={navOpen} setNavOpen={setNavOpen}/>
     <Routes>
       <Route path="/" element={ <Home /> }/>      
       <Route path="/about" element= {<About/>}/>

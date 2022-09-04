@@ -1,6 +1,7 @@
 import React from 'react'
 import "./styles/item.css"
 import "./styles/header.css"
+import { Link } from 'react-router-dom'
 
 const Item = ({item}) => {
   const formatPrice = (cents) =>{
@@ -9,9 +10,13 @@ const Item = ({item}) => {
   }
   return (
     <div className='store-card'>
-    <h2>{item.name}</h2>
-    <p>{formatPrice(item.price)}</p>
     <img src={item.image} alt={item.name+ " picture"} />
+    <div>{item.name}</div>
+    <div>{formatPrice(item.price)}</div>
+    
+    {/* <Link to={`/shop/${item.id}`}>
+      More details
+    </Link> */}
     </div>
     
   )

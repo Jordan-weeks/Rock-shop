@@ -7,19 +7,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-inline: 2rem;
-    background-image: url(../../assets/dirt.jpg);
+    padding-inline: 1em;
+    /* background-image: url(../../assets/dirt.jpg); */
+    background-color: var(--accent-color-1);
     background-position: center;
     background-size: cover;
     color: white; 
-    background-color: rgba(0, 0, 0, 0.325);   
+    /* background-color: rgba(0, 0, 0, 0.325);    */
 }
 .icon{
     color: rgb(201, 201, 201);
-    font-size: 24px;
-    background-color: rgba(0, 0, 0, 0.325);   
+    font-size: 40px;
+    /* background-color: rgba(0, 0, 0, 0.325);  */
+    /* padding-left: .25em;   */
 
 }
-/* .store-card{
-    color: chartreuse;
-} */
+social-container{
+    display: flex;
+    gap: .2em;
+}

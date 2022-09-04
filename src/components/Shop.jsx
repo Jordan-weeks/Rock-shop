@@ -5,11 +5,11 @@ import "./styles/shop.css"
 
 const Shop =({storeItems}) => {
     return(  
-  <main>
+  <main className='shop'>
     {storeItems.map((item) =>(
         <Link key={item.id}to={`/shop/${item.id}`}>
           <Item key={item.id} item={item}/>
-        </Link>
+       </Link>
         
     ))}
     
